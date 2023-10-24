@@ -2,7 +2,7 @@ import { cva } from '@/styled-system/css'
 import { styled } from '@/styled-system/jsx'
 
 export const BookContainer = styled(
-  'button',
+  'div',
   cva({
     base: {
       cursor: 'pointer',

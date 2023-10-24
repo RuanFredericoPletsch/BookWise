@@ -1,6 +1,6 @@
 'use client'
 
-import { ChartLineUp, Binoculars, SignIn } from 'phosphor-react'
+import { ChartLineUp, Binoculars, SignIn, User } from 'phosphor-react'
 import * as S from './styles'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
@@ -24,9 +24,15 @@ export const Sidebar = () => {
               Explorar
             </S.NavItem>
           </li>
+          <li>
+            <S.NavItem href="/perfil" isSelected={pathname === '/perfil'}>
+              <User size={24} />
+              Perfil
+            </S.NavItem>
+          </li>
         </S.NavList>
       </nav>
-      <S.LoginButton>
+      <S.LoginButton href="/login">
         Fazer Login
         <SignIn size={24} color="var(--colors-green-100)" />
       </S.LoginButton>

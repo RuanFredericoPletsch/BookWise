@@ -10,7 +10,6 @@ export const SidebarContainer = styled(
       top: '4',
       bottom: '4',
       left: '4',
-      bg: 'gray.700',
       w: '232px',
       rounded: 'lg',
       p: '12',
@@ -75,7 +74,7 @@ export const NavItem = styled(
 )
 
 export const LoginButton = styled(
-  'button',
+  Link,
   cva({
     base: {
       p: '1',

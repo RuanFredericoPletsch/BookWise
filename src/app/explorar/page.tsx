@@ -1,13 +1,13 @@
 'use client'
 
-import { Sidebar } from '@/components/Sidebar'
+import { Sidebar } from '@/components/composed/Sidebar'
 
 import * as S from './styles'
 import { Binoculars } from 'phosphor-react'
 import { Flex } from '@/styled-system/jsx'
-import { SearchBar } from '@/components/SearchBar'
-import { Tags } from '@/components/Tags'
-import { BooksGrid } from '@/components/BooksGrid'
+import { SearchBar } from '@/components/composed/SearchBar'
+import { Tags } from '@/components/primitives/Tags'
+import { BooksGrid } from '@/components/lists/BooksGrid'
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
             <S.Title>
               <Binoculars size={32} color="var(--colors-green-100)" /> Explorar
             </S.Title>
-            <SearchBar />
+            <SearchBar placeholder="Buscar livro ou autor" />
           </Flex>
           <Tags></Tags>
         </Flex>

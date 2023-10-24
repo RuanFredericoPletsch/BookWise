@@ -83,17 +83,21 @@ export default defineConfig({
 
   globalCss: defineGlobalStyles({
     '::-webkit-scrollbar': {
-      width: '16px',
+      width: '24px',
     },
 
     '::-webkit-scrollbar-track': {
-      bg: 'gray.800',
+      bg: 'gray.700',
+      backgroundClip: 'padding-box',
+      border: '8px solid rgba(0,0,0,0)',
     },
 
     '::-webkit-scrollbar-thumb': {
-      bg: 'gray.700',
+      bg: 'gray.600',
       transition: '0.2s',
       rounded: 'full',
+      backgroundClip: 'padding-box',
+      border: '8px solid rgba(0,0,0,0)',
     },
   }),
 
@@ -127,6 +131,20 @@ export default defineConfig({
             700: { value: '#181C2A' },
             800: { value: '#0E1116' },
           },
+        },
+        animations: {
+          drawerSlideIn: { value: 'drawerSlideIn 0.3s ease-out' },
+          drawerSlideOut: { value: 'drawerSlideOut 0.3s ease-in' },
+        },
+      },
+      keyframes: {
+        drawerSlideIn: {
+          '0%': { transform: 'translateX(800px)' },
+          '100%': { transform: 'translateX(0px)' },
+        },
+        drawerSlideOut: {
+          '0%': { transform: 'translateX(0px)' },
+          '100%': { transform: 'translateX(800px)' },
         },
       },
       textStyles,

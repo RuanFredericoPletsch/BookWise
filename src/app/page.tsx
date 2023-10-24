@@ -1,12 +1,12 @@
 'use client'
 
-import { Sidebar } from '@/components/Sidebar'
+import { Sidebar } from '@/components/composed/Sidebar'
 
 import * as S from './styles'
 import { Flex } from '../../styled-system/jsx'
 import { ChartLineUp } from 'phosphor-react'
-import { PopularBooks } from '@/components/PopularBooks'
-import { RecentRatigs } from '@/components/RecentRatings'
+import { PopularBooks } from '@/components/lists/PopularBooks'
+import { RecentRatigs } from '@/components/lists/RecentRatings'
 
 export default function Home() {
   return (

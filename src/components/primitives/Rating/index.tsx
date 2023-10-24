@@ -4,7 +4,7 @@ import { Star } from 'phosphor-react'
 import * as S from './styles'
 import { RatingGroup, RatingGroupProps } from '@ark-ui/react'
 import { type } from 'os'
-import { BookName } from './../BookRatingCard/styles'
+import { BookName } from '../../cards/BookRatingCard/styles'
 
 type RatingProps = RatingGroupProps & {
   bookName: string
